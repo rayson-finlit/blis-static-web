@@ -7,7 +7,7 @@ export function Navbar() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
-            <MessageCircle className="h-8 w-8 text-green-600 mr-2" />
+            <MessageCircle className="h-8 w-8 text-[#02A1B2] mr-2" />
             <span className="text-xl font-bold text-gray-900">
               MoneyMama BLIS
             </span>
@@ -32,7 +32,7 @@ export function Navbar() {
             >
               Contact
             </a>
-            <Button className="bg-green-600 hover:bg-green-700 text-white">
+            <Button className="bg-[#02A1B2] hover:bg-[#028799] text-white">
               Get Started
             </Button>
           </div>

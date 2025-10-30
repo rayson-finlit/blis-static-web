@@ -31,7 +31,7 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section className="py-20 sm:py-32 bg-gradient-to-b from-white to-blue-50">
+    <section className="py-20 sm:py-32 bg-linear-to-b from-white to-cyan-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center mb-16">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -68,7 +68,7 @@ export function Testimonials() {
                   {/* Author info */}
                   <div className="flex items-center gap-3">
                     <Avatar className="h-12 w-12">
-                      <AvatarFallback className="bg-gradient-to-br from-blue-500 to-green-500 text-white font-semibold">
+                      <AvatarFallback className="bg-linear-to-br from-[#02A1B2] to-cyan-600 text-white font-semibold">
                         {testimonial.initials}
                       </AvatarFallback>
                     </Avatar>

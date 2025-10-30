@@ -55,17 +55,17 @@ export function HowItWorks() {
               <div key={step.number} className="relative">
                 {/* Connector line - hidden on last item and on mobile */}
                 {index < steps.length - 1 && (
-                  <div className="hidden lg:block absolute top-12 left-[calc(50%+40px)] w-[calc(100%-80px)] h-[2px] bg-gradient-to-r from-blue-200 to-green-200" />
+                  <div className="hidden lg:block absolute top-12 left-[calc(50%+40px)] w-[calc(100%-80px)] h-0.5 bg-linear-to-r from-cyan-200 to-[#02A1B2]/30" />
                 )}
 
                 <div className="relative flex flex-col items-center text-center">
                   {/* Number badge */}
                   <div className="mb-6 relative">
-                    <div className="rounded-full bg-gradient-to-br from-blue-500 to-green-500 p-6 shadow-lg">
+                    <div className="rounded-full bg-linear-to-br from-[#02A1B2] to-cyan-600 p-6 shadow-lg">
                       <step.icon className="h-8 w-8 text-white" />
                     </div>
-                    <div className="absolute -top-2 -right-2 h-8 w-8 rounded-full bg-white border-2 border-blue-500 flex items-center justify-center">
-                      <span className="text-sm font-bold text-blue-600">
+                    <div className="absolute -top-2 -right-2 h-8 w-8 rounded-full bg-white border-2 border-[#02A1B2] flex items-center justify-center">
+                      <span className="text-sm font-bold text-[#02A1B2]">
                         {step.number}
                       </span>
                     </div>

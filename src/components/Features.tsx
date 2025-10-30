@@ -13,28 +13,28 @@ const features = [
     title: "Educate Before Application",
     description:
       "Help users understand loan requirements, terms, and eligibility criteria before they apply, ensuring informed decisions and better preparation.",
-    gradient: "from-blue-500 to-cyan-500",
+    gradient: "from-[#02A1B2] to-cyan-500",
   },
   {
     icon: Target,
     title: "Assess Suitability",
     description:
       "Intelligent assessment system evaluates applicant profiles and matches them with suitable loan products before submission to the bank.",
-    gradient: "from-purple-500 to-pink-500",
+    gradient: "from-[#02A1B2] to-teal-500",
   },
   {
     icon: Filter,
     title: "Qualified Leads Only",
     description:
       "Filter out low-quality leads and funnel only pre-qualified applicants, saving valuable time for bank processing teams.",
-    gradient: "from-orange-500 to-red-500",
+    gradient: "from-cyan-500 to-[#02A1B2]",
   },
   {
     icon: Smartphone,
     title: "WhatsApp Accessibility",
     description:
       "Reach the general population on the platform they use daily. No app downloads, no complex registration - just WhatsApp.",
-    gradient: "from-green-500 to-emerald-500",
+    gradient: "from-teal-500 to-[#02A1B2]",
   },
 ]
 

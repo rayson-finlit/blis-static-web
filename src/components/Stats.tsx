@@ -29,7 +29,7 @@ const stats = [
 
 export function Stats() {
   return (
-    <section className="py-16 sm:py-24 bg-gradient-to-br from-blue-50 via-white to-green-50">
+    <section className="py-16 sm:py-24 bg-linear-to-br from-cyan-50 via-white to-cyan-50/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -39,7 +39,7 @@ export function Stats() {
                 className="relative overflow-hidden rounded-2xl bg-white p-8 shadow-sm border border-gray-100 hover:shadow-lg transition-shadow"
               >
                 <div className="flex items-start justify-between mb-4">
-                  <div className="rounded-lg bg-gradient-to-br from-blue-500 to-green-500 p-3">
+                  <div className="rounded-lg bg-linear-to-br from-[#02A1B2] to-cyan-600 p-3">
                     <stat.icon className="h-6 w-6 text-white" />
                   </div>
                 </div>

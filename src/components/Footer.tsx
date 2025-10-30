@@ -20,7 +20,7 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center mb-4">
-              <MessageCircle className="h-8 w-8 text-green-500 mr-2" />
+              <MessageCircle className="h-8 w-8 text-[#02A1B2] mr-2" />
               <span className="text-xl font-bold text-white">
                 MoneyMama BLIS
               </span>
@@ -137,7 +137,7 @@ export function Footer() {
             </h3>
             <ul className="space-y-3">
               <li className="flex items-center gap-2">
-                <Mail className="h-4 w-4 text-green-500 flex-shrink-0" />
+                <Mail className="h-4 w-4 text-[#02A1B2] shrink-0" />
                 <a
                   href="mailto:info@moneymama.com"
                   className="hover:text-white transition-colors"
@@ -146,7 +146,7 @@ export function Footer() {
                 </a>
               </li>
               <li className="flex items-center gap-2">
-                <Phone className="h-4 w-4 text-green-500 flex-shrink-0" />
+                <Phone className="h-4 w-4 text-[#02A1B2] shrink-0" />
                 <a
                   href="tel:+60123456789"
                   className="hover:text-white transition-colors"
@@ -155,7 +155,7 @@ export function Footer() {
                 </a>
               </li>
               <li className="flex items-start gap-2">
-                <MapPin className="h-4 w-4 text-green-500 flex-shrink-0 mt-1" />
+                <MapPin className="h-4 w-4 text-[#02A1B2] shrink-0 mt-1" />
                 <span className="leading-relaxed">Kuala Lumpur, Malaysia</span>
               </li>
             </ul>
