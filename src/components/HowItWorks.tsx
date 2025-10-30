@@ -1,30 +1,39 @@
-import { MessageCircle, ClipboardCheck, Users2, CheckCircle2 } from "lucide-react"
+import {
+  MessageCircle,
+  ClipboardCheck,
+  Users2,
+  CheckCircle2,
+} from "lucide-react"
 
 const steps = [
   {
     number: "01",
     icon: MessageCircle,
     title: "User Starts Chat",
-    description: "Customer initiates conversation on WhatsApp - no app download or registration required"
+    description:
+      "Customer initiates conversation on WhatsApp - no app download or registration required",
   },
   {
     number: "02",
     icon: ClipboardCheck,
     title: "Smart Assessment",
-    description: "AI-powered conversation educates and assesses loan eligibility in real-time"
+    description:
+      "AI-powered conversation educates and assesses loan eligibility in real-time",
   },
   {
     number: "03",
     icon: Users2,
     title: "Profile Matching",
-    description: "System matches applicant with suitable loan products based on their profile"
+    description:
+      "System matches applicant with suitable loan products based on their profile",
   },
   {
     number: "04",
     icon: CheckCircle2,
     title: "Qualified Submission",
-    description: "Pre-qualified leads are submitted to the bank with complete assessment data"
-  }
+    description:
+      "Pre-qualified leads are submitted to the bank with complete assessment data",
+  },
 ]
 
 export function HowItWorks() {
@@ -48,7 +57,7 @@ export function HowItWorks() {
                 {index < steps.length - 1 && (
                   <div className="hidden lg:block absolute top-12 left-[calc(50%+40px)] w-[calc(100%-80px)] h-[2px] bg-gradient-to-r from-blue-200 to-green-200" />
                 )}
-                
+
                 <div className="relative flex flex-col items-center text-center">
                   {/* Number badge */}
                   <div className="mb-6 relative">
@@ -56,7 +65,9 @@ export function HowItWorks() {
                       <step.icon className="h-8 w-8 text-white" />
                     </div>
                     <div className="absolute -top-2 -right-2 h-8 w-8 rounded-full bg-white border-2 border-blue-500 flex items-center justify-center">
-                      <span className="text-sm font-bold text-blue-600">{step.number}</span>
+                      <span className="text-sm font-bold text-blue-600">
+                        {step.number}
+                      </span>
                     </div>
                   </div>
 
@@ -64,9 +75,7 @@ export function HowItWorks() {
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">
                     {step.title}
                   </h3>
-                  <p className="text-gray-600">
-                    {step.description}
-                  </p>
+                  <p className="text-gray-600">{step.description}</p>
                 </div>
               </div>
             ))}

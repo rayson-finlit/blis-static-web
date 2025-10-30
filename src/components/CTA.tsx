@@ -22,7 +22,7 @@ export function CTA() {
             Join leading financial institutions in providing accessible,
             intelligent loan assessment to your customers.
           </p>
-          
+
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row mb-16">
             <Button
               size="lg"

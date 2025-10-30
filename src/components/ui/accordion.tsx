@@ -9,9 +9,7 @@ import { cn } from "@/lib/utils"
 const Accordion = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Root>,
   React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Root>
->(({ ...props }, ref) => (
-  <AccordionPrimitive.Root ref={ref} {...props} />
-))
+>(({ ...props }, ref) => <AccordionPrimitive.Root ref={ref} {...props} />)
 Accordion.displayName = "Accordion"
 
 const AccordionItem = React.forwardRef<

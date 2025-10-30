@@ -14,8 +14,8 @@ export function Hero() {
           </Badge>
 
           <h1 className="mb-6 text-5xl font-bold tracking-tight text-gray-900 sm:text-7xl">
-            <GradientText 
-              text="MoneyMama BLIS" 
+            <GradientText
+              text="MoneyMama BLIS"
               gradient="linear-gradient(90deg, #2563eb 0%, #10b981 50%, #2563eb 100%)"
               className="text-5xl sm:text-7xl font-bold"
             />
@@ -26,16 +26,24 @@ export function Hero() {
           </p>
 
           <p className="mb-10 text-lg text-gray-600 sm:text-xl max-w-3xl mx-auto leading-relaxed">
-            Transform your loan application process with intelligent AI conversations. 
-            Educate, assess, and qualify applicants efficiently - all on the platform they already use.
+            Transform your loan application process with intelligent AI
+            conversations. Educate, assess, and qualify applicants efficiently -
+            all on the platform they already use.
           </p>
 
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white shadow-lg hover:shadow-xl transition-all">
+            <Button
+              size="lg"
+              className="bg-green-600 hover:bg-green-700 text-white shadow-lg hover:shadow-xl transition-all"
+            >
               <MessageCircle className="mr-2 h-5 w-5" />
               Start on WhatsApp
             </Button>
-            <Button size="lg" variant="outline" className="border-2 hover:bg-gray-50">
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-2 hover:bg-gray-50"
+            >
               <Play className="mr-2 h-5 w-5" />
               Watch Demo
             </Button>

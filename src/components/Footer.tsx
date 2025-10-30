@@ -1,4 +1,13 @@
-import { MessageCircle, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react"
+import {
+  MessageCircle,
+  Mail,
+  Phone,
+  MapPin,
+  Facebook,
+  Twitter,
+  Linkedin,
+  Instagram,
+} from "lucide-react"
 import { Separator } from "@/components/ui/separator"
 
 export function Footer() {
@@ -21,16 +30,28 @@ export function Footer() {
               WhatsApp. Making financial services accessible to everyone.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
                 <Instagram className="h-5 w-5" />
               </a>
             </div>
@@ -38,20 +59,31 @@ export function Footer() {
 
           {/* Product */}
           <div>
-            <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Product</h3>
+            <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">
+              Product
+            </h3>
             <ul className="space-y-3">
               <li>
-                <a href="#features" className="hover:text-white transition-colors">
+                <a
+                  href="#features"
+                  className="hover:text-white transition-colors"
+                >
                   Features
                 </a>
               </li>
               <li>
-                <a href="#how-it-works" className="hover:text-white transition-colors">
+                <a
+                  href="#how-it-works"
+                  className="hover:text-white transition-colors"
+                >
                   How It Works
                 </a>
               </li>
               <li>
-                <a href="#pricing" className="hover:text-white transition-colors">
+                <a
+                  href="#pricing"
+                  className="hover:text-white transition-colors"
+                >
                   Pricing
                 </a>
               </li>
@@ -65,7 +97,9 @@ export function Footer() {
 
           {/* Company */}
           <div>
-            <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Company</h3>
+            <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">
+              Company
+            </h3>
             <ul className="space-y-3">
               <li>
                 <a href="#about" className="hover:text-white transition-colors">
@@ -73,12 +107,18 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#testimonials" className="hover:text-white transition-colors">
+                <a
+                  href="#testimonials"
+                  className="hover:text-white transition-colors"
+                >
                   Testimonials
                 </a>
               </li>
               <li>
-                <a href="#careers" className="hover:text-white transition-colors">
+                <a
+                  href="#careers"
+                  className="hover:text-white transition-colors"
+                >
                   Careers
                 </a>
               </li>
@@ -92,7 +132,9 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Contact Us</h3>
+            <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">
+              Contact Us
+            </h3>
             <ul className="space-y-3">
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-green-500 flex-shrink-0" />
@@ -114,9 +156,7 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 text-green-500 flex-shrink-0 mt-1" />
-                <span className="leading-relaxed">
-                  Kuala Lumpur, Malaysia
-                </span>
+                <span className="leading-relaxed">Kuala Lumpur, Malaysia</span>
               </li>
             </ul>
           </div>
@@ -129,13 +169,22 @@ export function Footer() {
             &copy; {currentYear} MoneyMama BLIS. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm">
-            <a href="#privacy" className="text-gray-400 hover:text-white transition-colors">
+            <a
+              href="#privacy"
+              className="text-gray-400 hover:text-white transition-colors"
+            >
               Privacy Policy
             </a>
-            <a href="#terms" className="text-gray-400 hover:text-white transition-colors">
+            <a
+              href="#terms"
+              className="text-gray-400 hover:text-white transition-colors"
+            >
               Terms of Service
             </a>
-            <a href="#cookies" className="text-gray-400 hover:text-white transition-colors">
+            <a
+              href="#cookies"
+              className="text-gray-400 hover:text-white transition-colors"
+            >
               Cookie Policy
             </a>
           </div>

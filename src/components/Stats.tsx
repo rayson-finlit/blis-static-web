@@ -5,26 +5,26 @@ const stats = [
     icon: Users,
     value: "50K+",
     label: "Active Users",
-    description: "People using BLIS monthly"
+    description: "People using BLIS monthly",
   },
   {
     icon: CheckCircle,
     value: "85%",
     label: "Approval Rate",
-    description: "Pre-qualified applicants approved"
+    description: "Pre-qualified applicants approved",
   },
   {
     icon: Clock,
     value: "5 min",
     label: "Average Time",
-    description: "To complete assessment"
+    description: "To complete assessment",
   },
   {
     icon: TrendingUp,
     value: "3x",
     label: "Conversion",
-    description: "Increase in qualified leads"
-  }
+    description: "Increase in qualified leads",
+  },
 ]
 
 export function Stats() {
@@ -44,8 +44,12 @@ export function Stats() {
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <p className="text-4xl font-bold text-gray-900">{stat.value}</p>
-                  <p className="text-sm font-semibold text-gray-700">{stat.label}</p>
+                  <p className="text-4xl font-bold text-gray-900">
+                    {stat.value}
+                  </p>
+                  <p className="text-sm font-semibold text-gray-700">
+                    {stat.label}
+                  </p>
                   <p className="text-sm text-gray-500">{stat.description}</p>
                 </div>
               </div>

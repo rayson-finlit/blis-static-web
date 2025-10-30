@@ -7,23 +7,26 @@ const testimonials = [
     name: "Sarah Ahmad",
     role: "Loan Officer, BSN",
     initials: "SA",
-    content: "BLIS has transformed how we handle loan applications. We're seeing 3x more qualified leads and spending less time on initial screening.",
-    rating: 5
+    content:
+      "BLIS has transformed how we handle loan applications. We're seeing 3x more qualified leads and spending less time on initial screening.",
+    rating: 5,
   },
   {
     name: "Michael Chen",
     role: "Branch Manager, Maybank",
     initials: "MC",
-    content: "The WhatsApp interface is brilliant. Our customers love the accessibility and the assessment quality is outstanding.",
-    rating: 5
+    content:
+      "The WhatsApp interface is brilliant. Our customers love the accessibility and the assessment quality is outstanding.",
+    rating: 5,
   },
   {
     name: "Nurul Huda",
     role: "Customer Success, CIMB",
     initials: "NH",
-    content: "Applicants arrive much better prepared. They understand the requirements and come with realistic expectations. Game changer!",
-    rating: 5
-  }
+    content:
+      "Applicants arrive much better prepared. They understand the requirements and come with realistic expectations. Game changer!",
+    rating: 5,
+  },
 ]
 
 export function Testimonials() {
@@ -42,12 +45,18 @@ export function Testimonials() {
         <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {testimonials.map((testimonial) => (
-              <Card key={testimonial.name} className="border-2 hover:shadow-xl transition-shadow">
+              <Card
+                key={testimonial.name}
+                className="border-2 hover:shadow-xl transition-shadow"
+              >
                 <CardContent className="pt-6">
                   {/* Rating stars */}
                   <div className="flex gap-1 mb-4">
                     {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+                      <Star
+                        key={i}
+                        className="h-5 w-5 fill-yellow-400 text-yellow-400"
+                      />
                     ))}
                   </div>
 
@@ -64,8 +73,12 @@ export function Testimonials() {
                       </AvatarFallback>
                     </Avatar>
                     <div>
-                      <p className="font-semibold text-gray-900">{testimonial.name}</p>
-                      <p className="text-sm text-gray-500">{testimonial.role}</p>
+                      <p className="font-semibold text-gray-900">
+                        {testimonial.name}
+                      </p>
+                      <p className="text-sm text-gray-500">
+                        {testimonial.role}
+                      </p>
                     </div>
                   </div>
                 </CardContent>
