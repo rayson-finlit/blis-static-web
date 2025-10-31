@@ -27,7 +27,7 @@ function GradientText({
   return (
     <span className={cn("relative inline-block", className)} {...props}>
       <motion.span
-        className="m-0 text-transparent bg-clip-text bg-[length:200%_100%]"
+        className="m-0 text-transparent bg-clip-text bg-size-[200%_100%]"
         style={baseStyle}
         animate={{ backgroundPositionX: ["0%", "200%"] }}
         transition={transition}
@@ -37,7 +37,7 @@ function GradientText({
 
       {neon && (
         <motion.span
-          className="m-0 absolute top-0 left-0 text-transparent bg-clip-text blur-[8px] mix-blend-plus-lighter bg-[length:200%_100%]"
+          className="m-0 absolute top-0 left-0 text-transparent bg-clip-text blur-sm mix-blend-plus-lighter bg-size-[200%_100%]"
           style={baseStyle}
           animate={{ backgroundPositionX: ["0%", "200%"] }}
           transition={transition}

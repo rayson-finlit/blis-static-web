@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { MessageCircle, ArrowRight, Shield, Zap, Users } from "lucide-react"
+import { ArrowRight, Shield, Zap, Users } from "lucide-react"
 
 export function CTA() {
   return (
