@@ -1,11 +1,15 @@
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
+import { BackgroundPaths } from "@/components/ui/background-paths"
 import { MessageCircle, Sparkles, ArrowRight } from "lucide-react"
 
 export function Hero() {
   return (
     <section className="relative overflow-hidden bg-linear-to-br from-[#02A1B2] via-cyan-700 to-teal-600 py-32 sm:py-40 lg:py-48">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Background Paths */}
+      <BackgroundPaths />
+      
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="mx-auto max-w-7xl text-center">
           {/* Badge */}
           <Badge className="mb-8 bg-white/20 text-white hover:bg-white/30 border-white/30 text-sm px-4 py-1.5">
@@ -104,26 +108,6 @@ export function Hero() {
             </div>
           </div>
         </div>
-      </div>
-
-      {/* Background decorations */}
-      <div className="absolute inset-0 -z-10">
-        {/* Gradient orbs */}
-        <div className="absolute left-1/2 top-0 -translate-x-1/2 blur-3xl opacity-30">
-          <div className="aspect-square w-[600px] bg-white/20 rounded-full"></div>
-        </div>
-        <div className="absolute left-0 bottom-0 translate-x-[-50%] translate-y-[50%] blur-3xl opacity-20">
-          <div className="aspect-square w-[400px] bg-cyan-300/30 rounded-full"></div>
-        </div>
-        <div className="absolute right-0 top-1/2 translate-x-[50%] -translate-y-1/2 blur-3xl opacity-20">
-          <div className="aspect-square w-[400px] bg-teal-300/30 rounded-full"></div>
-        </div>
-
-        {/* Grid pattern */}
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-size-[32px_32px]"></div>
-
-        {/* Animated gradient line */}
-        <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-white/40 to-transparent"></div>
       </div>
     </section>
   )
