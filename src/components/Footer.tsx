@@ -21,7 +21,7 @@ export function Footer() {
               <img
                 src="/img/logo-white.svg"
                 alt="MoneyMama BLIS Logo"
-                className="h-8 w-auto"
+                className="h-6 w-auto"
               />
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">

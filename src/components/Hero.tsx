@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { BackgroundPaths } from "@/components/ui/background-paths"
-import { MessageCircle, Sparkles, ArrowRight } from "lucide-react"
+import { Sparkles, ArrowRight } from "lucide-react"
 
 export function Hero() {
   return (
@@ -31,13 +31,15 @@ export function Hero() {
 
           {/* CTA Button */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button
-              size="lg"
-              className="bg-white text-[#02A1B2] hover:bg-gray-100 shadow-xl hover:shadow-2xl transition-all text-lg px-8 py-6 w-full sm:w-auto group"
-            >
-              Schedule a Demo
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
+            <a href="mailto:hello@moneymama.co?subject=MoneyMama%20BLIS%20-%20Demo%20Request">
+              <Button
+                size="lg"
+                className="bg-white text-[#02A1B2] hover:bg-gray-100 shadow-xl hover:shadow-2xl transition-all text-lg px-8 py-6 w-full sm:w-auto group"
+              >
+                Schedule a Demo
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </a>
           </div>
 
           {/* Feature highlights */}

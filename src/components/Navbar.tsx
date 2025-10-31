@@ -9,7 +9,7 @@ export function Navbar() {
             <img
               src="/img/logo-color.svg"
               alt="MoneyMama BLIS Logo"
-              className="h-6 w-auto"
+              className="h-5 w-auto sm:h-6"
             />
           </div>
 

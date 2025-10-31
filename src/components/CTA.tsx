@@ -27,13 +27,15 @@ export function CTA() {
           </p>
 
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row mb-16">
-            <Button
-              size="lg"
-              className="bg-white text-[#02A1B2] hover:bg-gray-100 shadow-xl hover:shadow-2xl transition-all text-lg px-8 py-6"
-            >
-              Schedule a Demo
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <a href="mailto:hello@moneymama.co?subject=MoneyMama%20BLIS%20-%20Demo%20Request">
+              <Button
+                size="lg"
+                className="bg-white text-[#02A1B2] hover:bg-gray-100 shadow-xl hover:shadow-2xl transition-all text-lg px-8 py-6"
+              >
+                Schedule a Demo
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </a>
           </div>
 
           {/* Features grid */}
