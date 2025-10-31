@@ -44,9 +44,18 @@ export function Navbar() {
             </Button>
           </div>
 
+          {/* Mobile - Just Get Started button */}
           <div className="md:hidden">
-            <Button variant="ghost" size="sm">
-              Menu
+            <Button
+              onClick={() =>
+                document
+                  .getElementById("cta")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+              size="sm"
+              className="bg-[#02A1B2] hover:bg-[#028799] text-white"
+            >
+              Get Started
             </Button>
           </div>
         </div>

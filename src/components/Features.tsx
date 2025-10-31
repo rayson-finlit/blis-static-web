@@ -1,11 +1,5 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
 import { GraduationCap, Target, Filter, Smartphone } from "lucide-react"
+import { BackgroundPaths } from "@/components/ui/background-paths"
 
 const features = [
   {
@@ -13,66 +7,78 @@ const features = [
     title: "Educate Before Application",
     description:
       "Help users understand loan requirements, terms, and eligibility criteria before they apply, ensuring informed decisions and better preparation.",
-    gradient: "from-[#02A1B2] to-cyan-500",
   },
   {
     icon: Target,
     title: "Assess Suitability",
     description:
       "Intelligent assessment system evaluates applicant profiles and matches them with suitable loan products before submission to the bank.",
-    gradient: "from-[#02A1B2] to-teal-500",
   },
   {
     icon: Filter,
     title: "Qualified Leads Only",
     description:
       "Filter out low-quality leads and funnel only pre-qualified applicants, saving valuable time for bank processing teams.",
-    gradient: "from-cyan-500 to-[#02A1B2]",
   },
   {
     icon: Smartphone,
     title: "WhatsApp Accessibility",
     description:
       "Reach the general population on the platform they use daily. No app downloads, no complex registration - just WhatsApp.",
-    gradient: "from-teal-500 to-[#02A1B2]",
   },
 ]
 
 export function Features() {
   return (
-    <section id="features" className="py-20 sm:py-32 bg-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section
+      id="features"
+      className="py-20 sm:py-32 bg-linear-to-br from-cyan-50 via-white to-teal-50 relative overflow-hidden"
+    >
+      {/* Background Paths */}
+      <div className="absolute inset-0 opacity-30">
+        <BackgroundPaths />
+      </div>
+
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="mx-auto max-w-2xl text-center mb-16">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <div className="inline-flex items-center justify-center p-2 bg-[#02A1B2]/10 rounded-full mb-4">
+            <span className="px-4 py-1 text-sm font-semibold text-[#02A1B2]">
+              Key Features
+            </span>
+          </div>
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
             Why Choose MoneyMama BLIS?
           </h2>
-          <p className="mt-4 text-lg text-gray-600">
+          <p className="text-lg text-gray-600">
             Transform your loan application process with intelligent automation
             and accessibility
           </p>
         </div>
 
         <div className="mx-auto max-w-7xl">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:gap-12">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:gap-8">
             {features.map((feature) => (
-              <Card
+              <div
                 key={feature.title}
-                className="border-2 hover:shadow-lg transition-shadow"
+                className="group relative bg-white rounded-2xl p-8 border border-gray-200 hover:border-[#02A1B2]/30 hover:shadow-lg transition-all duration-300"
               >
-                <CardHeader>
-                  <div
-                    className={`inline-flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-br ${feature.gradient} mb-4`}
-                  >
-                    <feature.icon className="h-6 w-6 text-white" />
+                {/* Icon */}
+                <div className="mb-6">
+                  <div className="inline-flex h-14 w-14 items-center justify-center rounded-xl bg-[#02A1B2] shadow-md">
+                    <feature.icon className="h-7 w-7 text-white" />
                   </div>
-                  <CardTitle className="text-xl">{feature.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-base">
-                    {feature.description}
-                  </CardDescription>
-                </CardContent>
-              </Card>
+                </div>
+
+                {/* Title */}
+                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  {feature.title}
+                </h3>
+
+                {/* Description */}
+                <p className="text-gray-600 leading-relaxed">
+                  {feature.description}
+                </p>
+              </div>
             ))}
           </div>
         </div>
