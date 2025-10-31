@@ -1,9 +1,4 @@
-import {
-  MessageCircle,
-  ClipboardCheck,
-  Users2,
-  CheckCircle2,
-} from "lucide-react"
+import { MessageCircle, ClipboardCheck, CheckCircle2 } from "lucide-react"
 
 const steps = [
   {
@@ -11,46 +6,39 @@ const steps = [
     icon: MessageCircle,
     title: "User Starts Chat",
     description:
-      "Customer initiates conversation on WhatsApp - no app download or registration required",
+      "Customer initiates conversation on WhatsApp - no app download or registration required. Simply start chatting to begin the loan assessment journey.",
   },
   {
     number: "02",
     icon: ClipboardCheck,
     title: "Smart Assessment",
     description:
-      "AI-powered conversation educates and assesses loan eligibility in real-time",
+      "AI-powered conversation educates users about loan requirements, evaluates eligibility in real-time, and matches them with suitable loan products.",
   },
   {
     number: "03",
-    icon: Users2,
-    title: "Profile Matching",
-    description:
-      "System matches applicant with suitable loan products based on their profile",
-  },
-  {
-    number: "04",
     icon: CheckCircle2,
     title: "Qualified Submission",
     description:
-      "Pre-qualified leads are submitted to the bank with complete assessment data",
+      "Pre-qualified leads with complete assessment data are submitted to the bank, saving officers time and reducing application defaults.",
   },
 ]
 
 export function HowItWorks() {
   return (
-    <section className="py-20 sm:py-32 bg-white">
+    <section id="how-it-works" className="py-20 sm:py-32 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center mb-16">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             How It Works
           </h2>
           <p className="mt-4 text-lg text-gray-600">
-            Four simple steps to transform your loan application process
+            Three simple steps to transform your loan application process
           </p>
         </div>
 
         <div className="mx-auto max-w-6xl">
-          <div className="grid grid-cols-1 gap-12 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-12 lg:grid-cols-3">
             {steps.map((step, index) => (
               <div key={step.number} className="relative">
                 {/* Connector line - hidden on last item and on mobile */}

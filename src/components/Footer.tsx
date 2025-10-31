@@ -1,7 +1,5 @@
 import {
-  MessageCircle,
   Mail,
-  Phone,
   MapPin,
   Facebook,
   Twitter,
@@ -16,14 +14,15 @@ export function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center mb-4">
-              <MessageCircle className="h-8 w-8 text-[#02A1B2] mr-2" />
-              <span className="text-xl font-bold text-white">
-                MoneyMama BLIS
-              </span>
+              <img
+                src="/img/logo-white.svg"
+                alt="MoneyMama BLIS Logo"
+                className="h-8 w-auto"
+              />
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
               Transforming loan applications with intelligent AI assessment on
@@ -80,51 +79,8 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a
-                  href="#pricing"
-                  className="hover:text-white transition-colors"
-                >
-                  Pricing
-                </a>
-              </li>
-              <li>
                 <a href="#faq" className="hover:text-white transition-colors">
                   FAQ
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Company */}
-          <div>
-            <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">
-              Company
-            </h3>
-            <ul className="space-y-3">
-              <li>
-                <a href="#about" className="hover:text-white transition-colors">
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#testimonials"
-                  className="hover:text-white transition-colors"
-                >
-                  Testimonials
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#careers"
-                  className="hover:text-white transition-colors"
-                >
-                  Careers
-                </a>
-              </li>
-              <li>
-                <a href="#blog" className="hover:text-white transition-colors">
-                  Blog
                 </a>
               </li>
             </ul>
@@ -136,27 +92,26 @@ export function Footer() {
               Contact Us
             </h3>
             <ul className="space-y-3">
-              <li className="flex items-center gap-2">
-                <Mail className="h-4 w-4 text-[#02A1B2] shrink-0" />
+              <li className="flex items-start gap-2">
+                <Mail className="h-4 w-4 text-[#02A1B2] shrink-0 mt-1" />
                 <a
-                  href="mailto:info@moneymama.com"
+                  href="mailto:hello@moneymama.co?subject=BLIS:%20Web%20Enquiry"
                   className="hover:text-white transition-colors"
                 >
-                  info@moneymama.com
-                </a>
-              </li>
-              <li className="flex items-center gap-2">
-                <Phone className="h-4 w-4 text-[#02A1B2] shrink-0" />
-                <a
-                  href="tel:+60123456789"
-                  className="hover:text-white transition-colors"
-                >
-                  +60 12-345 6789
+                  hello@moneymama.co
                 </a>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 text-[#02A1B2] shrink-0 mt-1" />
-                <span className="leading-relaxed">Kuala Lumpur, Malaysia</span>
+                <span className="leading-relaxed">
+                  Finlit Technologies Sdn Bhd
+                  <br />
+                  C-3-1, Encorp Strand Garden Office
+                  <br />
+                  12, Jalan PJU 5/1, Kota Damansara
+                  <br />
+                  47810 Petaling Jaya, Selangor
+                </span>
               </li>
             </ul>
           </div>
@@ -165,9 +120,12 @@ export function Footer() {
         <Separator className="my-8 bg-gray-800" />
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-gray-400">
-            &copy; {currentYear} MoneyMama BLIS. All rights reserved.
-          </p>
+          <div className="text-sm text-gray-400 text-center md:text-left">
+            <p className="mb-1">
+              &copy; {currentYear} MoneyMama BLIS All rights reserved.
+            </p>
+            <p>Finlit Technologies Sdn. Bhd. 202501022464 (1623877-K)</p>
+          </div>
           <div className="flex gap-6 text-sm">
             <a
               href="#privacy"
@@ -180,12 +138,6 @@ export function Footer() {
               className="text-gray-400 hover:text-white transition-colors"
             >
               Terms of Service
-            </a>
-            <a
-              href="#cookies"
-              className="text-gray-400 hover:text-white transition-colors"
-            >
-              Cookie Policy
             </a>
           </div>
         </div>

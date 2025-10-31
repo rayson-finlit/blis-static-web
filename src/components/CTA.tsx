@@ -3,7 +3,10 @@ import { MessageCircle, ArrowRight, Shield, Zap, Users } from "lucide-react"
 
 export function CTA() {
   return (
-    <section className="relative py-20 sm:py-32 bg-linear-to-br from-[#02A1B2] via-cyan-700 to-teal-600 overflow-hidden">
+    <section
+      id="cta"
+      className="relative py-20 sm:py-32 bg-linear-to-br from-[#02A1B2] via-cyan-700 to-teal-600 overflow-hidden"
+    >
       {/* Background decorations */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff10_1px,transparent_1px),linear-gradient(to_bottom,#ffffff10_1px,transparent_1px)] bg-size-[32px_32px]"></div>
       <div className="absolute top-0 right-0 -translate-y-12 translate-x-12 blur-3xl opacity-30">

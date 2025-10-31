@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button"
 
 export function Navbar() {
   return (
-    <nav className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
+    <nav className="fixed top-0 w-full z-50 bg-white backdrop-blur-md border-b border-gray-200">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
@@ -16,23 +16,30 @@ export function Navbar() {
           <div className="hidden md:flex items-center space-x-8">
             <a
               href="#features"
-              className="text-gray-700 hover:text-gray-900 transition-colors"
+              className="text-gray-700 hover:text-[#02A1B2] transition-colors"
             >
               Features
             </a>
             <a
-              href="#about"
-              className="text-gray-700 hover:text-gray-900 transition-colors"
+              href="#how-it-works"
+              className="text-gray-700 hover:text-[#02A1B2] transition-colors"
             >
-              About
+              How It Works
             </a>
             <a
-              href="#contact"
-              className="text-gray-700 hover:text-gray-900 transition-colors"
+              href="mailto:hello@moneymama.co"
+              className="text-gray-700 hover:text-[#02A1B2] transition-colors"
             >
               Contact
             </a>
-            <Button className="bg-[#02A1B2] hover:bg-[#028799] text-white">
+            <Button
+              onClick={() =>
+                document
+                  .getElementById("cta")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+              className="bg-[#02A1B2] hover:bg-[#028799] text-white"
+            >
               Get Started
             </Button>
           </div>
