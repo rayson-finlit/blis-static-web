@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button"
-import { MessageCircle } from "lucide-react"
 
 export function Navbar() {
   return (
@@ -7,10 +6,11 @@ export function Navbar() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
-            <MessageCircle className="h-8 w-8 text-[#02A1B2] mr-2" />
-            <span className="text-xl font-bold text-gray-900">
-              MoneyMama BLIS
-            </span>
+            <img
+              src="/img/logo-color.svg"
+              alt="MoneyMama BLIS Logo"
+              className="h-6 w-auto"
+            />
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
