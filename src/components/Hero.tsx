@@ -8,7 +8,7 @@ export function Hero() {
     <section className="relative overflow-hidden bg-linear-to-br from-[#02A1B2] via-cyan-700 to-teal-600 py-32 sm:py-40 lg:py-48">
       {/* Background Paths */}
       <BackgroundPaths />
-      
+
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="mx-auto max-w-7xl text-center">
           {/* Badge */}
